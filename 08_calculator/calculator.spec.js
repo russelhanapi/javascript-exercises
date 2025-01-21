@@ -57,11 +57,11 @@ describe("multiply", () => {
 });
 
 describe("power", () => {
-  test.skip("raises one number to the power of another number", () => {
+  test("raises one number to the power of another number", () => {
     expect(calculator.power(4, 3)).toBe(64); // 4 to third power is 64
   });
 
-  test.skip("raises one number to the power of a large number", () => {
+  test("raises one number to the power of a large number", () => {
     expect(calculator.power(3, 10)).toBe(59049); // 3 to tenth power is 59049
   });
 });
