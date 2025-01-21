@@ -6,7 +6,11 @@ const add = function (...addends) {
 const subtract = function (minuend, subtrahend) {
   return minuend - subtrahend;
 };
-const sum = function () {};
+
+const sum = function ([...addends]) {
+  const result = addends.reduce((sum, addend) => (sum += addend), 0);
+  return result;
+};
 
 const multiply = function () {};
 
